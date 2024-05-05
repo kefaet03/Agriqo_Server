@@ -135,7 +135,7 @@ def weather_api(agricultural_zone, city):
     elif current_date >= 8 and current_date <= 7:
         current_month += 0.75
 
-    sun_light_hour = sun_shine_hour[agricultural_zone][current_monthe] * 7
+    sun_light_hour = sun_shine_hour[agricultural_zone-1][current_monthe-1] * 7
 
     return (
         current_month,
